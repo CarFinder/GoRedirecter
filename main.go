@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	http.HandleFunc("/api/image", handlers.GetImage)
+	http.HandleFunc("/redirect/image", handlers.GetImage)
 
 	err := http.ListenAndServe(":9090", nil)
 
